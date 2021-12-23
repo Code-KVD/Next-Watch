@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nextwatch</title>
+    <link rel="stylesheet" href="css\layout.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-ul">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div id="search">
+                <div id="searchIcon"><img src="static/search_white_24dp.svg" alt="" width="30px"></div>
+            </div>
+        </nav>
+            <form action="" method="get" class="searchForm" id="searchForm">
+                <input type="text" name="search" id="searchInput" placeholder=" Search Movies & TV shows">
+            </form>
+    </header>
+    <main>
+        <div class="collage">
+            <p>Explore  your </p>
+            <div class="heading"><p>Next Watch</p></div>
+           
+        </div>
+        <div class="container">
+            <div class="sort-filter">
+                <div class="dropdown">
+                  Popular
+                  <ul>
+                      <li class = "movies">Movies</li>
+                      <li class="tvShows">TV Shows</li>
+                  </ul>  
+                </div>
+                <div class="dropdown">
+                  Top Rated
+                  <ul>
+                      <li class = "movies">Movies</li>
+                      <li class="tvShows">TV Shows</li>
+                  </ul>  
+                </div>
+                <div class="dropdown">
+                  Upcoming
+                  <ul>
+                      <li class = "movies">Movies</li>
+                  </ul>  
+                </div>
+                <div class="dropdown">
+                  Comedy
+                  <ul>
+                      <li class = "movies">Movies</li>
+                      <li class="tvShows">TV Shows</li>
+                  </ul>  
+                </div>
+                <div class="dropdown">
+                  Action
+                  <ul>
+                      <li class = "movies">Movies</li>
+                      <li class="tvShows">TV Shows</li>
+                  </ul>  
+                </div>
+                <div class="dropdown">
+                  More
+                  <ul>
+                      <li class="more">Horror</li>
+                      <li class="more">Drama</li>
+                      <li class="more">Animation</li>
+                  </ul>  
+                </div>
+            </div>
+            
+            <didivv class="card-container" id="cardContainer">
+               <!-- All the cards will be added here. -->
+            </didivv>
+        </div>
+    </main>
+    <footer>
+        <span>nextwatch.in &copy; All Rights Reserved</span>
+    </footer>
+</body>
+<script src="scripts/script.js"></script>
+</html>

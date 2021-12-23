@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Monoton&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.navbar{
+    font-family: 'Fjalla One', sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    color: aliceblue;
+    height: 60px;
+    font-size: larger;
+}
+
+.nav-ul{
+    display: flex;
+    list-style: none;
+    padding: 15px;
+    color: white;
+}
+
+.nav-ul li{
+    padding-left: 50px;
+}
+.nav-ul li a{
+    color: white;
+    text-decoration: solid;
+}
+.nav-ul li a:hover{
+    color: inherit;
+    animation: link-hover;
+    animation-duration: 0.6s;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    color: rgba(95, 168, 218, 0.91);
+   
+}
+
+@keyframes link-hover{
+    0%{
+        font-size: inherit;
+
+        
+    }
+    100%{
+        font-size: 1.5rem;
+    }
+}
+
+#search{
+    padding: 12px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+#search:hover{
+    animation: search-icon;
+    animation-duration: 0.6s;
+    animation-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes search-icon{
+    0%{
+        transform: inherit;
+
+        
+    }
+    100%{
+        transform: scale(1.25);
+    }
+}
+.searchForm{
+    position: absolute;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+   
+}
+
+.searchForm input{
+    width: 96%;
+    height: 30px;
+    margin-right: 63px;
+    border-radius: 5px;
+    border: 3px solid rgb(226, 224, 224);
+}
+
+.collage{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),linear-gradient(180deg,transparent 14%,rgba(0,0,0,.3) 49%,rgba(0,0,0,.3) 85%,transparent),url(https://developer.imdb.com/hero-dynamic.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.collage p{
+    font-family: 'Monoton', cursive;
+    color:rgba(227, 226, 226, 0.89);
+    font-size: 7.5vh;
+    font-weight:600;
+    text-align: center;
+    animation-name: heading;
+    animation-duration: 1.6s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes heading {
+    0%{
+        opacity:0;
+        transform:translateY(-30vh);
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        
+    }
+}
+
+.heading p{
+    animation-name: heading-name;
+    animation-duration: 1.6s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes heading-name {
+    0%{
+        opacity:0;
+        transform:translateY(30vh);
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        
+    }
+}
+.container{
+    margin: 40px auto;
+    width: 80%;
+}
+.sort-filter{
+    display: flex;
+    height: 35px;
+    margin-left: 25px;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+.sort-filter div{
+    width: 40%;
+    border: 1px solid rgb(10, 10, 95);
+    padding: 8px;
+    text-align: center;
+    background: linear-gradient( rgba(6, 121, 197, 0.945),rgb(0, 0, 0), #1579d087);
+    cursor:pointer;
+}
+.dropdown ul{
+    position: relative;
+    right:0.5rem;
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    list-style: none;
+    background-color: white;
+    opacity: 0.8;
+    color: black;
+    border: 1px solid black;
+    visibility: hidden;
+}
+.dropdown:hover ul{
+    visibility: visible;
+}
+.dropdown ul li{
+    padding: 5px;
+}
+.container h2{
+    margin-top: 13px;
+    margin-left: 25px;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 7.3rem;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 320px;
+    width: 250px;
+    border-radius: 15px;
+    margin: 25px;
+    box-shadow: 2px 2px 13px 1px rgba(148, 197, 230, 0.91);
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+}
+
+.card:hover{
+    box-shadow:2px 2px 20px 7px rgba(95, 168, 218, 0.91);
+}
+.card-image{
+    height: 220px;
+    width: 180px;
+}
+
+.card h3{
+    width: 85%;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.rating{
+    height: 45px;
+    width: 45px;
+    position:relative;
+    left: 95px;
+    bottom: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating-star{
+    width: 18px;
+    height: auto;   
+}
+
+.overview{
+    position: absolute;
+    left:0;
+    bottom: 0;
+    right: 0;
+    color: black;
+    background-color: white;
+    font-size: smaller;
+    max-height: 50%;
+    max-width: 100%;
+    visibility: hidden;
+    /* opacity: 0.8; */
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.overview p{
+    color: black;
+        width: 225px;
+        height: 75%;
+        padding:1rem;
+}
+.overview h3{
+    padding: 0.5rem 0 0 1rem;
+}
+.card:hover .overview{
+    visibility: visible;
+    animation: animate-overview 400ms ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animate-overview{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0.8;
+    }
+}
+
+footer{
+    height: 7vh;
+    background: linear-gradient( #1579d087, rgb(0, 0, 0));
+    color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
