@@ -110,14 +110,14 @@ searchForm.addEventListener("submit", (e) => {
     }
 });
 
-// Movies sorting.
+// Movies sorting according to various genres.
 moviesSort.forEach((element,index)=>{
     element.addEventListener("click",()=>{
         fetchdata(dataObj,urlObj.moviesURL[index],showdata);
     });
 })
 
-// Tv sorting.
+// Tv sorting according to various genres.
 tvSort.forEach((element,index)=>{
     element.addEventListener("click",()=>{
         fetchdata(dataObj,urlObj.tvURL[index],showdata);
