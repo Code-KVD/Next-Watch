@@ -1,6 +1,6 @@
 // Storing the api key in a variable.
 const apikey = "2f86555bdb8f43af9c42effe0439a260"
-require("dotenv").config();
+
 
 // initalising variables.
 const cardContainer = document.getElementById("cardContainer");
