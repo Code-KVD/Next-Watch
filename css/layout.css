@@ -205,7 +205,7 @@ body{
     height: 320px;
     width: 250px;
     border-radius: 15px;
-    margin: 65px;
+    margin: 53px;
     box-shadow: 2px 2px 13px 1px rgba(148, 197, 230, 0.91);
     font-family: 'Ubuntu', sans-serif;
     cursor: pointer;
@@ -229,7 +229,7 @@ body{
     height: 45px;
     width: 45px;
     position:relative;
-    left: 95px;
+    left: 92px;
     bottom: 5px;
     border-radius: 50%;
     display: flex;
